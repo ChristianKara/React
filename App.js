@@ -9,4 +9,4 @@
 	}
 });
 
-	React.render(<App txt='This is the props text'/>, document.body);
+React.render(<App txt='This is the props text'/>, document.body);

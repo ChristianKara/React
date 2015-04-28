@@ -3,15 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hello World</title>
-	<script src='http://fb.me/react-0.12.2.js'></script>
-		<script src='http://fb.me/JSXTransformer-0.12.2.js'></script>
+	<script src="https://fb.me/react-0.13.2.min.js"></script>
+	<script src="https://fb.me/JSXTransformer-0.13.2.js"></script>
 </head>
 <body>
-<script src='App.js' type='text/jsx'>
 
-</script>
+<script type='text/jsx'>
+	var App = React.createClass({
+	render:function(){
+	return (
+		<div>
+		<h1>Hello World!!!</h1>
+		<h3>{this.props.txt}</h3>
+		</div>
+		)
+	}
+});
 
-<script>
+React.render(<App txt='This is the props text'/>, document.body);
+// 	var App = React.createClass({
+// 	render:function(){
+// 	return	<h1>Hello World!!!</h1>
+// 	}
+// });
+
+// 	React.render(<App />, document.body);
 	// var App = React.createClass({
 	// 	render: function(){
 	// 		return React.DOM.h1(null, 'HELLO THERE!')
